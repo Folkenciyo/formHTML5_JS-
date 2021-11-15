@@ -21,7 +21,7 @@ const message = document.querySelector("#msg");
 window.onload = function() {};
 
 //CARD CVC AMOUNT
-CardNum.addEventListener("focusout", () => {
+CardNum.addEventListener.validateCreditCard("focusout", () => {
   if (
     isTheNum(CardNum.value) &&
     CardNum.value.length >= 12 &&
@@ -83,7 +83,7 @@ message.addEventListener("focusout", () => {
 
 const istheText = text => {
   //this is just for Text
-  return /^[a-zA-Z]*$/.test(text);
+  return /^[a-záéíóúñüàèA-ZÑÁÉÍÓÚ]*$/.test(text);
 };
 
 const isTheNum = num => {
